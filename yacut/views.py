@@ -1,7 +1,8 @@
 from flask import render_template, redirect, flash
+
+from . import app, db
 from .forms import URLForm
 from .models import URLMap
-from . import app, db
 
 
 @app.route('/', methods=('GET', 'POST',))
